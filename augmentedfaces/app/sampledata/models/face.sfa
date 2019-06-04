@@ -1,0 +1,35 @@
+{
+  materials: [
+    {
+      name: 'grid',
+      parameters: [
+        {
+          texture: 'grid',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    }
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/fox_face.fbx',
+    name: 'grid',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/grid.png',
+      name: 'grid',
+        injections: [
+             {usage: "Normal",},
+           ],
+    }
+  ],
+  version: '0.54:2',
+}
